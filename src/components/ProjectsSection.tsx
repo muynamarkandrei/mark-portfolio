@@ -25,7 +25,6 @@ const projects: Project[] = [
       "Data privacy & security compliance",
     ],
     tech: ["Salesforce", "LWC", "Apex", "SOQL", "AI Integration"],
-    liveDemo: "https://handsmen-threads.herokuapp.com",
   },
   {
     title: "NovaTech PH",
@@ -41,7 +40,7 @@ const projects: Project[] = [
       "Data privacy & secure transaction handling",
     ],
     tech: ["React", "Three.js", "Node.js", "MongoDB", "AI Integration", "JavaScript"],
-    liveDemo: "https://nova-tech.xyz",
+    liveDemo: "https://egie-ecommerce.vercel.app/",
   },
 ];
 
