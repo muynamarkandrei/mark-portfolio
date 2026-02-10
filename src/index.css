@@ -1,11 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
 /* stylelint-disable-next-line */
 @tailwind base;
 /* stylelint-disable-next-line */
 @tailwind components;
 /* stylelint-disable-next-line */
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 @layer base {
   :root {
