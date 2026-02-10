@@ -74,6 +74,7 @@ const ContactSection = () => {
                 <p className="text-xs text-muted-foreground">github.com/muynamarkandrei</p>
               </div>
             </a>
+            <p className="text-xs text-muted-foreground mt-4">Open to internship opportunities and freelance projects</p>
             <a
               href="mailto:markandreimuyna31@gmail.com"
               className="flex items-center gap-4 group"

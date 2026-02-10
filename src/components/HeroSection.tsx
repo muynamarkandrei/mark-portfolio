@@ -37,8 +37,11 @@ const HeroSection = () => {
           Mark Andrei{" "}
           <span className="gradient-text">B. Muyna</span>
         </h1>
-        <p className="text-muted-foreground text-lg md:text-xl max-w-xl mx-auto mb-10">
-          BSIT student at PUP Santa Maria, Bulacan — building modern web experiences with passion and purpose.
+        <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-4">
+          Building modern web experiences with clean code and curious mind.
+        </p>
+        <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-10">
+          BSIT student at PUP Santa Maria • Available for internships • Frontend focus with interest in UI/UX & cybersecurity
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button asChild size="lg" className="rounded-full px-8 font-display glow">

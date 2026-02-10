@@ -1,7 +1,16 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Badge } from "@/components/ui/badge";
 
-const projects = [
+interface Project {
+  title: string;
+  subtitle: string;
+  description: string;
+  highlights: string[];
+  tech: string[];
+  liveDemo?: string;
+}
+
+const projects: Project[] = [
   {
     title: "HandsMen Threads",
     subtitle: "Salesforce E-Commerce Platform",
@@ -16,6 +25,7 @@ const projects = [
       "Data privacy & security compliance",
     ],
     tech: ["Salesforce", "LWC", "Apex", "SOQL", "AI Integration"],
+    liveDemo: "https://handsmen-threads.herokuapp.com",
   },
   {
     title: "NovaTech PH",
@@ -31,6 +41,7 @@ const projects = [
       "Data privacy & secure transaction handling",
     ],
     tech: ["React", "Three.js", "Node.js", "MongoDB", "AI Integration", "JavaScript"],
+    liveDemo: "https://nova-tech.xyz",
   },
 ];
 
@@ -66,7 +77,7 @@ const ProjectsSection = () => {
                 ))}
               </ul>
 
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 mb-4">
                 {project.tech.map((t) => (
                   <Badge
                     key={t}
@@ -77,6 +88,17 @@ const ProjectsSection = () => {
                   </Badge>
                 ))}
               </div>
+              
+              {project.liveDemo && (
+                <a
+                  href={project.liveDemo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-xs text-primary hover:underline"
+                >
+                  → Live Demo
+                </a>
+              )}
             </div>
           ))}
         </div>
