@@ -1,0 +1,88 @@
+/* stylelint-disable-next-line */
+@tailwind base;
+/* stylelint-disable-next-line */
+@tailwind components;
+/* stylelint-disable-next-line */
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@layer base {
+  :root {
+    --background: 220 20% 4%;
+    --foreground: 210 40% 96%;
+
+    --card: 220 20% 7%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 220 20% 7%;
+    --popover-foreground: 210 40% 96%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 220 20% 4%;
+
+    --secondary: 220 20% 12%;
+    --secondary-foreground: 210 40% 96%;
+
+    --muted: 220 15% 14%;
+    --muted-foreground: 215 15% 55%;
+
+    --accent: 260 80% 65%;
+    --accent-foreground: 210 40% 96%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 16%;
+    --input: 220 15% 16%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .animate-in-view {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+  }
+
+  .animate-in-view.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(217 91% 60%), hsl(260 80% 65%));
+  }
+
+  .glow {
+    box-shadow: 0 0 40px -10px hsl(217 91% 60% / 0.3);
+  }
+
+  .hero-gradient {
+    background: radial-gradient(ellipse at 50% 0%, hsl(217 91% 60% / 0.12) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 50%, hsl(260 80% 65% / 0.08) 0%, transparent 50%);
+  }
+}
